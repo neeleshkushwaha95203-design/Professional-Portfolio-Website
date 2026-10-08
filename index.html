@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Neelesh — Web Designer & Frontend Developer</title>
+ <link rel="icon" type="image/png" href="image/neeleshbro.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <p class="loader-text">LOADING</p>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- Particles -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">NK.</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#education" onclick="closeMobileMenu()">Education</a>
+  <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow" data-aos="fade-down" data-aos-delay="100">
+          <span></span>Web Designer & UI/UX Designer
+
+        </div>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="200">Neelesh</h1>
+        <div class="hero-title" id="typed-text" data-aos="fade-up" data-aos-delay="300"></div>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+         I create modern, responsive, and user-friendly websites with clean design and seamless user experiences.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+          <a href="image/Neelesh Professional Resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        </div>
+       
+
+
+
+
+
+
+        
+      </div>
+      <div class="hero-image-wrap" data-aos="zoom-in" data-aos-delay="200">
+        <div class="hero-img-ring">
+          <div class="hero-img-inner"><img src="image/men.png" alt="Neelesh">
+            
+          </div>
+        </div>
+        <div class="floating-badge b1">
+          <div class="badge-icon">🎨</div>
+          <div class="badge-text">
+            <strong>UI/UX</strong>
+           Graphic Design 
+          </div>
+        </div>
+        <div class="floating-badge b2">
+          <div class="badge-icon">⚡</div>
+          <div class="badge-text">
+            <strong>Fast & Clean</strong>
+            Code Quality
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap" data-aos="fade-right">
+        <div class="about-img-box">
+          <img src="image/men.png" alt="Neelesh">
+          
+        </div>
+        <div class="about-experience-badge">
+          <div class="exp-num">1+</div>
+          <div class="exp-label">Years of Experience</div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Passionate about <span>Design & Code</span></h2>
+        <p class="about-intro">
+        Web Designer, UI/UX Designer & Graphic Designer skilled in creating responsive websites, intuitive user interfaces, and impactful visual designs. Passionate about delivering creative, user-focused, and modern digital experiences.
+        </p>
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">Neelesh </div>
+          </div>
+          <div class="about-info-item">
+            <div class="info-label">Role</div>
+            <div class="info-value">Web Designer & Graphic Designer</div>
+          </div>
+          <div class="about-info-item">
+            <div class="info-label">Location</div>
+            <div class="info-value">India</div>
+          </div>
+          <div class="about-info-item">
+            <div class="info-label">Availability</div>
+            <div class="info-value" style="color: #22C55E;">Open to Work ✓</div>
+          </div>
+        </div>
+        <div class="about-goal">
+          <p><strong>Career Goal:</strong>To grow as a Web Designer and UI/UX Designer by creating innovative, user-friendly digital experiences and continuously improving my skills.</p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <span class="section-label">My Arsenal</span>
+      <h2 class="section-title">My <span>Skills</span></h2>
+    </div>
+     <div class="skills-wrap"data-aos="fade-left" data-aos-duration="1500" >
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5">
+                </div>
+                <div class="skill-title">HTML5</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3">
+                </div>
+                <div class="skill-title">CSS3</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" alt="Sass">
+                </div>
+                <div class="skill-title">Sass</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2282/2282188.png" alt="Responsive">
+                </div>
+                <div class="skill-title">Responsive</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap">
+                </div>
+                <div class="skill-title">Bootstrap</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9496/9496441.png" alt="Tailwind">
+                </div>
+                <div class="skill-title">Tailwind CSS</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="PSD">
+                </div>
+                <div class="skill-title">PSD to HTML</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="Animation">
+                </div>
+                <div class="skill-title">Animation</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+                </div>
+                <div class="skill-title">Email Template</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress">
+                </div>
+                <div class="skill-title">WordPress</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma">
+                </div>
+                <div class="skill-title">Figma</div>
+            </div>
+            <div class="skill">
+                <div class="skill-ico">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop">
+                </div>
+                <div class="skill-title">Photoshop</div>
+            </div>
+
+                        <div class="skill">
+                <div class="skill-ico">
+                    <img src="image/social.png" alt="Photoshop">
+                </div>
+                <div class="skill-title">jQuery</div>
+            </div>
+        </div>
+  </div>
+</section>
+
+ <section id="skills">
+       
+       
+    </section>
+
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Academic Journey</span>
+      <h2 class="section-title">My <span>Education</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2020 – 2021</div>
+          <div class="timeline-title">10th Standard — SSC</div>
+          <div class="timeline-inst">Royal Public School</div>
+          <div class="timeline-desc">Completed secondary education with distinction in Mathematics and Science. Built a strong academic foundation.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="timeline-dot"><i class="fas fa-book"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2022 – 2023</div>
+          <div class="timeline-title">12th Standard — HSC</div>
+          <div class="timeline-inst">Summer Gold H.S. School</div>
+          <div class="timeline-desc">Completed higher secondary education with focus on Science stream. Developed analytical and problem-solving skills.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"><i class="fas fa-university"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2023 – 2026</div>
+          <div class="timeline-title">Bachelor of Science (B.Sc.) in Computer Science</div>
+          <div class="timeline-inst">Jiwaji University, Gwalior</div>
+          <div class="timeline-desc">Graduated with a B.Sc. in Computer Science, gaining knowledge in programming, web technologies, databases, and software development.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2024 – 2025</div>
+          <div class="timeline-title">Web Design & Development Certification</div>
+          <div class="timeline-inst">IT Learning Institute, Gwalior</div>
+          <div class="timeline-desc">Completed professional courses in HTML5, CSS3, JQuery, Bootstrap, Tailwind CSS, Figma UI/UX Design, and WordPress Development.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <span class="section-label">My Work</span>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-subtitle">A curated selection of projects that showcase my skills in design and development.</p>
+    </div>
+    <div class="filter-bar" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+       <button class="filter-btn" data-filter="ui">UI/UX</button>
+      <button class="filter-btn" data-filter="wordpress">WordPress</button>
+
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://orama.partners/"><img src="image/project2.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">When Dots Connect, Value Multiplies</div>
+          <div class="project-desc">Strategic advisory for early-stage startups, connecting the right dots to create sustainable growth and lasting value.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://decorait.shop/"><img src="image/project1.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Stylish & Functional</div>
+          <div class="project-desc">Elegant mango wood sideboard with handcrafted detailing, spacious storage, and a timeless modern look.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.decorait.com/"><img src="image/project3.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Decor Ecosystem Powered by AI</div>
+          <div class="project-desc">An AI-powered décor platform connecting professionals, retailers, distributors, and brands through smart technology and digital solutions.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+  <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://grand-halva-955aa8.netlify.app/"><img src="image/home rent.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Welcome to Your Next Adventure</div>
+          <div class="project-desc">Find your dream home with HomeNest and discover properties that perfectly match your lifestyle and needs.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+       <div class="project-card" data-category="ui" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.figma.com/proto/jA4tMmcgRyjlzbBwrwvjhr/Untitled?node-id=949-760&t=kr28trmZZ9F91YNe-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=553%3A549"><img src="image/pay.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">The Fastest Way to Pay Digitally</div>
+          <div class="project-desc">Fast, secure, and reliable digital payments anytime, anywhere with PayFast.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+      
+      
+       <div class="project-card" data-category="ui" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.figma.com/proto/jA4tMmcgRyjlzbBwrwvjhr/Untitled?node-id=949-1237&t=kr28trmZZ9F91YNe-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=553%3A549"><img src="image/digital.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Digital Marketing for the Modern Era</div>
+          <div class="project-desc">Powerful digital marketing solutions that connect your business with the right customers and drive meaningful growth.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card" data-category="ui" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.figma.com/proto/jA4tMmcgRyjlzbBwrwvjhr/Untitled?node-id=443-2153&t=Nxse8sGxpQaW4ghz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=553%3A549"><img src="image/mobile design.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Student Learning & Career Development App UI</div>
+          <div class="project-desc">Modern student career app UI with scholarships, mentorship, jobs, guidance, and profile management features.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+     
+            
+       <div class="project-card" data-category="wordpress" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.russelllawnandlandscaping.com/"><img src="image/w-russ.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">Russell Landscaping – Landscaping Service Website</div>
+          <div class="project-desc">Professional landscaping website design featuring service information, customer reviews, financing, contact details, and a service request form.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card" data-category="wordpress" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1));">
+          <a href="https://www.migrateclouddata.com/"><img src="image/wordpress project1.png" alt=""></a>
+         
+        </div>
+        <div class="project-info">
+          <div class="project-title">MigrateCloudData – Cloud Software Solutions Website</div>
+          <div class="project-desc">Cloud software solutions website with a clean, modern, and professional UI.</div>
+          <div class="project-tags">
+          </div>
+        </div>
+      </div>
+         
+        </div>
+       
+      </div>
+
+
+</section>
+
+
+
+<!-- ===== RESUME ===== -->
+
+
+
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's <span>Work Together</span></h2>
+      <p class="section-subtitle">Have a project in mind? I'd love to hear about it.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">neeleshkushwah14324@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">+91 7999303299</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">India</div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-item-label" style="margin-bottom: 12px;">Connect With Me</div>
+          <div class="contact-social">
+            <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" class="form-control" placeholder="Neelesh"/>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="neeleshkushwah14324@gmail.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control" placeholder="+91 7999303299"/>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="align-self: flex-start;" onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">NK.</div>
+        <p class="footer-desc">Web Designer & Frontend Developer crafting modern, responsive websites that combine beautiful design with clean, efficient code.</p>
+        <div class="contact-social">
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#">Website Design</a>
+          <a href="#">Landing Page</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">WordPress Dev</a>
+          <a href="#">Email Templates</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 <span>Neelesh Kushwah</span>. Designed & Built with <span>♥</span></div>
+      <div class="footer-copy">Made with HTML, CSS & jQuery</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+// === LOADER ===
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    setTimeout(() => { loader.style.display = 'none'; }, 500);
+  }, 1200);
+});
+
+// === CURSOR ===
+const cursor = document.getElementById('cursor');
+const follower = document.getElementById('cursor-follower');
+let mx = 0, my = 0, fx = 0, fy = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animateCursor() {
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  fx += (mx - fx) * 0.12; fy += (my - fy) * 0.12;
+  follower.style.left = fx + 'px'; follower.style.top = fy + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+document.querySelectorAll('a, button, .project-card, .service-card, .tool-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1.8)'; follower.style.transform = 'translate(-50%,-50%) scale(1.5)'; });
+  el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; follower.style.transform = 'translate(-50%,-50%) scale(1)'; });
+});
+
+// === PARTICLES ===
+const canvas = document.getElementById('particles-canvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+resizeCanvas(); window.addEventListener('resize', resizeCanvas);
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 2 + 0.5;
+    this.vx = (Math.random() - 0.5) * 0.4;
+    this.vy = (Math.random() - 0.5) * 0.4;
+    this.alpha = Math.random() * 0.5 + 0.1;
+    const cols = ['#6366F1','#8B5CF6','#EC4899'];
+    this.color = cols[Math.floor(Math.random() * cols.length)];
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < 0) this.x = canvas.width;
+    if (this.x > canvas.width) this.x = 0;
+    if (this.y < 0) this.y = canvas.height;
+    if (this.y > canvas.height) this.y = 0;
+  }
+  draw() {
+    ctx.save(); ctx.globalAlpha = this.alpha;
+    ctx.fillStyle = this.color;
+    ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill(); ctx.restore();
+  }
+}
+for (let i = 0; i < 80; i++) particles.push(new Particle());
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => { p.update(); p.draw(); });
+  // draw lines
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i+1; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 100) {
+        ctx.save(); ctx.globalAlpha = (1 - dist/100) * 0.12;
+        ctx.strokeStyle = '#6366F1'; ctx.lineWidth = 0.5;
+        ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y); ctx.stroke(); ctx.restore();
+      }
+    }
+  }
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+// === AOS ===
+AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+
+// === TYPING ANIMATION ===
+const texts = ['Web Designer', 'Frontend Developer', 'UI/UX Designer', 'WordPress Designer'];
+let tIdx = 0, cIdx = 0, deleting = false;
+const typedEl = document.getElementById('typed-text');
+function type() {
+  const cur = texts[tIdx];
+  if (!deleting) {
+    typedEl.textContent = cur.substring(0, cIdx + 1);
+    cIdx++;
+    if (cIdx === cur.length) { deleting = true; setTimeout(type, 1800); return; }
+  } else {
+    typedEl.textContent = cur.substring(0, cIdx - 1);
+    cIdx--;
+    if (cIdx === 0) { deleting = false; tIdx = (tIdx + 1) % texts.length; }
+  }
+  setTimeout(type, deleting ? 60 : 110);
+}
+type();
+
+// === THEME TOGGLE ===
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  const html = document.documentElement;
+  const isLight = html.getAttribute('data-theme') === 'light';
+  html.setAttribute('data-theme', isLight ? 'dark' : 'light');
+  themeToggle.innerHTML = isLight ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+});
+
+// === HAMBURGER ===
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+// === SKILL BARS ===
+function animateSkills() {
+  document.querySelectorAll('.skill-fill').forEach(bar => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      bar.style.width = bar.dataset.width + '%';
+    }
+  });
+}
+// Circular skills
+function animateCircles() {
+  document.querySelectorAll('.circle-fill').forEach(c => {
+    const rect = c.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      const pct = parseInt(c.dataset.pct);
+      const circumference = 2 * Math.PI * 25;
+      c.style.strokeDashoffset = circumference - (pct / 100) * circumference;
+    }
+  });
+}
+window.addEventListener('scroll', () => { animateSkills(); animateCircles(); });
+setTimeout(() => { animateSkills(); animateCircles(); }, 800);
+
+// === COUNTER ===
+let countersAnimated = false;
+function animateCounters() {
+  if (countersAnimated) return;
+  const section = document.getElementById('stats');
+  const rect = section.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    countersAnimated = true;
+    document.querySelectorAll('.counter').forEach(c => {
+      const target = parseInt(c.dataset.target);
+      let cur = 0;
+      const duration = 1800, steps = 60, inc = target / steps;
+      const timer = setInterval(() => {
+        cur = Math.min(cur + inc, target);
+        c.textContent = Math.floor(cur);
+        if (cur >= target) clearInterval(timer);
+      }, duration / steps);
+    });
+  }
+}
+window.addEventListener('scroll', animateCounters);
+
+// === PROJECT FILTER ===
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
+        card.style.animation = 'none';
+        void card.offsetWidth;
+        card.style.animation = 'fadeIn 0.4s ease';
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// === TESTIMONIALS SLIDER ===
+const track = document.getElementById('testimonials-track');
+const cards = track.querySelectorAll('.testimonial-card');
+const dotsContainer = document.getElementById('slider-dots');
+let current = 0;
+const total = Math.ceil(cards.length / 3);
+for (let i = 0; i < total; i++) {
+  const dot = document.createElement('button');
+  dot.classList.add('slider-dot');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goTo(i));
+  dotsContainer.appendChild(dot);
+}
+function goTo(idx) {
+  current = idx;
+  // 3 cards visible on desktop, calc offset
+  const cardW = cards[0].offsetWidth + 24;
+  track.style.transform = `translateX(-${current * cardW * 3}px)`;
+  document.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+}
+document.getElementById('next-slide').addEventListener('click', () => goTo((current + 1) % total));
+document.getElementById('prev-slide').addEventListener('click', () => goTo((current - 1 + total) % total));
+setInterval(() => goTo((current + 1) % total), 5000);
+
+// === BACK TO TOP ===
+const backTop = document.getElementById('back-top');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 500);
+});
+
+// === CONTACT FORM ===
+function sendMessage() {
+  alert('Message sent successfully! I will get back to you within 24 hours. 🎉');
+}
+</script>
+
+</body>
+</html>
